@@ -21,3 +21,7 @@ Example workflow:
 ![image](https://user-images.githubusercontent.com/4239376/111462948-b714cc80-8727-11eb-8bd9-8192c8b9359c.png)
 ![image](https://user-images.githubusercontent.com/4239376/111463227-065afd00-8728-11eb-8ded-2f8e34705724.png)
 
+## Durable Orchestrator Functions with timer.
+link: [Orchestrator Function with Timer](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/5-control-long-running-tasks-using-timers)
+
+* You should use durable timers in orchestrator functions instead of the setTimeout() and setInterval() functions.

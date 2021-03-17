@@ -19,3 +19,5 @@ Example workflow:
 * An escalation task is allocated if the approval task isn't completed within a pre-defined time limit.
 
 ![image](https://user-images.githubusercontent.com/4239376/111462948-b714cc80-8727-11eb-8bd9-8192c8b9359c.png)
+![image](https://user-images.githubusercontent.com/4239376/111463227-065afd00-8728-11eb-8ded-2f8e34705724.png)
+

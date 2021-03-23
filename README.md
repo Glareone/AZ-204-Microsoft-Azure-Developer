@@ -27,3 +27,14 @@ link: [Orchestrator Function with Timer](https://docs.microsoft.com/en-us/learn/
 * You should use durable timers in orchestrator functions instead of the setTimeout() and setInterval() functions.
 
 Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction)
+
+# Azure Event Hub (for High Load of Events);
+
+1. First you need to create Namespace;
+  a. Select and push to bash your selected name: `NS_NAME=event-hub-namespace`
+  b. Create Event Hub Namespace: `az eventhubs namespace create --name event-hub-namespace`
+  c. Get JSON Configuration (with connections) to your created namespace: `az eventhubs namespace authorization-rule keys list     --name RootManageSharedAccessKey     --namespace-name $NS_NAME`
+2. Create Event Hub:
+  a. New Hub Name: `HUB_NAME=hubname-$RANDOM`
+  b. Create Event Hub: `az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME`
+  c. Check that Event Hub created properly: `az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME`

@@ -38,3 +38,7 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   a. New Hub Name: `HUB_NAME=hubname-$RANDOM`  
   b. Create Event Hub: `az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME`  
   c. Check that Event Hub created properly: `az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME`  
+  
+  ### Azure Event Hub Resilience: 
+  `Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.`
+  **Event Hub, not Event Hub Namespace. You can Disable(turn off) the Event Hub to test that. All messages will appear when you turn on you Event Hub again.**

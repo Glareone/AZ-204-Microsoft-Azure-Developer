@@ -27,3 +27,22 @@ link: [Orchestrator Function with Timer](https://docs.microsoft.com/en-us/learn/
 * You should use durable timers in orchestrator functions instead of the setTimeout() and setInterval() functions.
 
 Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction)
+
+# Blob Storage and live example how to work with it (but library is deprecated, not a big deal anyway)
+* Application works in Azure Environment. Otherwise, you have to create and define this configuration file on your own (`services.Configure<AzureStorageConfig>(Configuration.GetSection("AzureStorageConfig"));`)
+* Better to store this code in AppService.
+    1) Create a plan `az appservice plan create \  
+   --name blob-exercise-plan \  
+   --resource-group learn-21e4e8a8-bc24-473a-ab32-9db698dcb993 \  
+   --sku FREE --location centralus`  
+    2) Create WebApp `az webapp create \  
+       --name <your-unique-app-name> \  
+       --plan blob-exercise-plan \  
+       --resource-group learn-21e4e8a8-bc24-473a-ab32-9db698dcb993`  
+    3) get Connection string `CONNECTIONSTRING=$(az storage account show-connection-string \  
+       --name <your-unique-storage-account-name> \  
+       --output tsv)`  
+       
+    4) Create AppSettings config webapp `CONNECTIONSTRING=$(az storage account show-connection-string \  
+       --name <your-unique-storage-account-name> \  
+       --output tsv)`  

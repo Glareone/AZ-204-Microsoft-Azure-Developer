@@ -42,3 +42,22 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   ### Azure Event Hub Resilience: 
   `Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.`
   **Event Hub, not Event Hub Namespace. You can Disable(turn off) the Event Hub to test that. All messages will appear when you turn on you Event Hub again.**
+
+# Blob Storage and live example how to work with it (but library is deprecated, not a big deal anyway)
+* Application works in Azure Environment. Otherwise, you have to create and define this configuration file on your own (`services.Configure<AzureStorageConfig>(Configuration.GetSection("AzureStorageConfig"));`)
+* Better to store this code in AppService.
+    1) Create a plan `az appservice plan create \  
+   --name blob-exercise-plan \  
+   --resource-group learn-21e4e8a8-bc24-473a-ab32-9db698dcb993 \  
+   --sku FREE --location centralus`  
+    2) Create WebApp `az webapp create \  
+       --name <your-unique-app-name> \  
+       --plan blob-exercise-plan \  
+       --resource-group learn-21e4e8a8-bc24-473a-ab32-9db698dcb993`  
+    3) get Connection string `CONNECTIONSTRING=$(az storage account show-connection-string \  
+       --name <your-unique-storage-account-name> \  
+       --output tsv)`  
+       
+    4) Create AppSettings config webapp `CONNECTIONSTRING=$(az storage account show-connection-string \  
+       --name <your-unique-storage-account-name> \  
+       --output tsv)`  

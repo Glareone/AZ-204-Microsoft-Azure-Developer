@@ -28,6 +28,21 @@ link: [Orchestrator Function with Timer](https://docs.microsoft.com/en-us/learn/
 
 Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction)
 
+# Azure Event Hub (for High Load of Events);
+
+1. First you need to create Namespace:  
+  a. Select and push to bash your selected name: `NS_NAME=event-hub-namespace`  
+  b. Create Event Hub Namespace: `az eventhubs namespace create --name event-hub-namespace`  
+  c. Get JSON Configuration (with connections) to your created namespace: `az eventhubs namespace authorization-rule keys list     --name RootManageSharedAccessKey     --namespace-name $NS_NAME`  
+2. Create Event Hub:  
+  a. New Hub Name: `HUB_NAME=hubname-$RANDOM`  
+  b. Create Event Hub: `az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME`  
+  c. Check that Event Hub created properly: `az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME`  
+  
+  ### Azure Event Hub Resilience: 
+  `Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.`
+  **Event Hub, not Event Hub Namespace. You can Disable(turn off) the Event Hub to test that. All messages will appear when you turn on you Event Hub again.**
+
 # Blob Storage and live example how to work with it (but library is deprecated, not a big deal anyway)
 * Application works in Azure Environment. Otherwise, you have to create and define this configuration file on your own (`services.Configure<AzureStorageConfig>(Configuration.GetSection("AzureStorageConfig"));`)
 * Better to store this code in AppService.

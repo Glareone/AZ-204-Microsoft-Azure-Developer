@@ -78,4 +78,4 @@ All cmd-lets support interactiveness.
 * Create VM: `New-AzVm -ResourceGroupName learn-34fad52d-63cc-4ea1-a121-107041f719b7 -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22`
 * Get Resources by type: `Get-AzResource -ResourceType Microsoft.Compute/virtualMachines`
 
-script example
+PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/blob/main/PowerShell%20script%20example%20(Create%20VM)/ConferenceDailyReset.ps1)

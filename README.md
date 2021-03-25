@@ -65,6 +65,7 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   
 # Azure CLI Tips:
 ## Azure CLI with bash syntax
+**To use az module you have to install it first! It has all commands which Azure PowerShell provides**
 
 * Azure bot can help you to find information about anything from Azure World:  
 `azure find KEY_WORD` - to find anything tied with your keyword, i.e. `azure find "blob storage create"` or `azure find blob-storage-create` (first example with quotes usually works better)

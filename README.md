@@ -76,3 +76,6 @@ All cmd-lets support interactiveness.
 * get all resources by Resource Group Name: `Get-AzResource -ResourceGroupName $vm.ResourceGroupName | ft`
 * Set Complex Variale: `$vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName learn-34fad52d-63cc-4ea1-a121-107041f719b7)`
 * Create VM: `New-AzVm -ResourceGroupName learn-34fad52d-63cc-4ea1-a121-107041f719b7 -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22`
+* Get Resources by type: `Get-AzResource -ResourceType Microsoft.Compute/virtualMachines`
+
+script example

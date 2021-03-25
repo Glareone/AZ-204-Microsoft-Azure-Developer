@@ -64,6 +64,15 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   Link to the BlobStorage + .Net MVC Project example: [Blob Storage + MVC](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/BlobStorage%2BMVC/WorkingWithBlobStorage)
   
 # Azure CLI Tips:
+## Azure CLI with bash syntax
+
 * Azure bot can help you to find information about anything from Azure World:  
 `azure find KEY_WORD` - to find anything tied with your keyword, i.e. `azure find "blob storage create"` or `azure find blob-storage-create` (first example with quotes usually works better)
 * To find information about proper command (like to get the list of all parameters): `az YOUR_COMMAND --help`  
+
+## Azure PowerShell
+All cmd-lets support interactiveness.
+
+* get all resources by Resource Group Name: `Get-AzResource -ResourceGroupName $vm.ResourceGroupName | ft`
+* Set Complex Variale: `$vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName learn-34fad52d-63cc-4ea1-a121-107041f719b7)`
+* Create VM: `New-AzVm -ResourceGroupName learn-34fad52d-63cc-4ea1-a121-107041f719b7 -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22`

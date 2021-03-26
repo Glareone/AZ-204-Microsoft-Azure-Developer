@@ -80,3 +80,18 @@ All cmd-lets support interactiveness.
 * Get Resources by type: `Get-AzResource -ResourceType Microsoft.Compute/virtualMachines`
 
 PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/blob/main/PowerShell%20script%20example%20(Create%20VM)/ConferenceDailyReset.ps1)
+
+# Azure App Service
+## Deploy Zip File
+* Create WebApp (App Service):
+  1)  + Create new Resource, WebApp in Search, Select name "web-app-learn1", Select .net stack, Review and Create
+* Create .net project and publish it locally:
+  1)  Create .net project
+  2)  Publish .net project into folder "pub" and name it "site.zip"
+  3)  zip all files from publishing folder with 7zip
+*  Publish into Azure:
+  1) open Visual Studio Terminal
+  2) cd pub
+  3) az login (potentially with --tenant "yourLearnDirectory.docs.microsoft.com")
+  4) az webapp deployment source config-zip --src site.zip --resource-group learn-cef0f929-db52-4acc-acc1-981a6ceb1852 --name web-app-learn1
+  6) check your application

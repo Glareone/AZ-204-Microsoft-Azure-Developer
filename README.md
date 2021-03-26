@@ -90,8 +90,11 @@ PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-A
   2)  Publish .net project into folder "pub" and name it "site.zip"
   3)  zip all files from publishing folder with 7zip
 *  Publish into Azure:
-  1) open Visual Studio Terminal
-  2) cd pub
-  3) az login (potentially with --tenant "yourLearnDirectory.docs.microsoft.com")
-  4) az webapp deployment source config-zip --src site.zip --resource-group learn-cef0f929-db52-4acc-acc1-981a6ceb1852 --name web-app-learn1
-  6) check your application
+  1)  open Visual Studio Terminal
+  2)  cd pub
+  3)  az login (potentially with --tenant "yourLearnDirectory.docs.microsoft.com")
+  4)  az webapp deployment source config-zip --src site.zip --resource-group learn-cef0f929-db52-4acc-acc1-981a6ceb1852 --name web-app-learn1
+  6)  check your application
+
+## Working with Slots (Production, Test slots within one App Service Plan (Standard, Premium and Isolated only, Free and Basic aren't supported))
+Link: [MS-Learn Link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots)

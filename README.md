@@ -109,8 +109,11 @@ Link: [MS-Learn Link](https://docs.microsoft.com/en-us/learn/modules/stage-deplo
 Different connection links (and other dedicated configurations) for slots: [link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots)  
 
 # Azure Container Registry (let you save Docker images and use it for deployment in App Service)
+## Create Registry and image
   1) Create Registry
   2) in your project `az acr build --registry <container_registry_name> --image <selected_image_name> .`
 
 ![image](https://user-images.githubusercontent.com/4239376/112735530-553d3980-8f55-11eb-8124-1bc83692f934.png)
 
+## Use image in order to deploy new version in App Service
+[Here is an instruction](https://docs.microsoft.com/en-us/learn/modules/deploy-run-container-app-service/5-exercise-deploy-web-app?pivots=csharp)

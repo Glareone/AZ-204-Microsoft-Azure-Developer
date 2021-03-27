@@ -96,6 +96,14 @@ PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-A
   4)  az webapp deployment source config-zip --src site.zip --resource-group learn-cef0f929-db52-4acc-acc1-981a6ceb1852 --name web-app-learn1
   6)  check your application
 
+## Deploy with Git system
+* First option is to use Local Git.
+  1) Create local Git under App Service > Deployment Center
+  2) Create Local Git
+  3) Copy Local Git URL and use it to create the repo locally on PC \ in Azure
+  4) git init, git push...
+  5) Create production branch. Push all changes to production branch to see these changes in App Serivce.
+
 ## Working with Slots (Production, Test slots within one App Service Plan (Standard, Premium and Isolated only, Free and Basic aren't supported))
 Link: [MS-Learn Link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots)  
 Different connection links (and other dedicated configurations) for slots: [link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots)  

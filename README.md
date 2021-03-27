@@ -87,8 +87,8 @@ PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-A
   1)  + Create new Resource, WebApp in Search, Select name "web-app-learn1", Select .net stack, Review and Create
 * Create .net project and publish it locally:
   1)  Create .net project
-  2)  Publish .net project into folder "pub" and name it "site.zip"
-  3)  zip all files from publishing folder with 7zip
+  2)  Publish .net project into folder "pub" and name it "site.zip" (`dotnet build` + `cd yourProjectToPublish` + `dotnet publish -o pub`)
+  3)  zip all files from publishing folder with 7zip 
 *  Publish into Azure:
   1)  open Visual Studio Terminal
   2)  cd pub

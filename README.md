@@ -120,3 +120,6 @@ Different connection links (and other dedicated configurations) for slots: [link
 
 ## Container Registry + App Service + Docker Images. Continuous Integration
 [Here is an instruction](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer)
+
+# Azure Key Vault Example
+[Link](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)

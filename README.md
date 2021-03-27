@@ -117,3 +117,6 @@ Different connection links (and other dedicated configurations) for slots: [link
 
 ## Use image in order to deploy new version in App Service
 [Here is an instruction](https://docs.microsoft.com/en-us/learn/modules/deploy-run-container-app-service/5-exercise-deploy-web-app?pivots=csharp)
+
+## Container Registry + App Service + Docker Images. Continuous Integration
+[Here is an instruction](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer)

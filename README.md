@@ -122,7 +122,8 @@ Different connection links (and other dedicated configurations) for slots: [link
 [Here is an instruction](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer)
 
 # Azure Key Vault Example
-[Link](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)
+[Mapage Passwords in Key Vault Example](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)
+[Key Vault Management and Configuration](https://docs.microsoft.com/en-us/learn/modules/configure-and-manage-azure-key-vault/3-manage-access-and-permissions-to-secrets)
 
 **Tips**
 * For example, if you want to grant an application the rights to use keys in a key vault, you only need to grant data plane access permissions using key vault access policies. No management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, by using RBAC, you can grant read access to the management plane. No access to the data plane is required.

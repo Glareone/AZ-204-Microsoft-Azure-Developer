@@ -124,10 +124,13 @@ Different connection links (and other dedicated configurations) for slots: [link
 # Azure Key Vault Example
 [Link](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)
 
-# Validation and Threat Protection (Cross Site Scripting (CSS), CORS)
+# Threat Protection (Cross Site Scripting (CSS), CORS). Data Validation. Secure your Data.
+
 ## Validation techniques
 [Input_Validation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 ## CSS
 [Cross_Site_Scripting_Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 ## List of apps which help you to find vulnerabilities in your project. Safe Dependencies.
 [tools to verify if our dependencies are vulnerable](https://docs.microsoft.com/en-us/learn/modules/top-5-security-items-to-consider/6-safe-dependencies)
+## Data discovery
+* Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. 

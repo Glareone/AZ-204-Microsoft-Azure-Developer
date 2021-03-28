@@ -124,6 +124,8 @@ Different connection links (and other dedicated configurations) for slots: [link
 # Azure Key Vault Example
 [Link](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)
 
-# Validation
+# Validation and Threat Protection (Cross Site Scripting (CSS), CORS)
 ## Validation techniques
 [Input_Validation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
+## CSS
+[Cross_Site_Scripting_Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)

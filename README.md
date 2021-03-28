@@ -128,6 +128,8 @@ Different connection links (and other dedicated configurations) for slots: [link
 **Tips**
 * For example, if you want to grant an application the rights to use keys in a key vault, you only need to grant data plane access permissions using key vault access policies. No management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, by using RBAC, you can grant read access to the management plane. No access to the data plane is required.
 
+* Get secret from Key vault using Azure CLI `az keyvault secret show --vault-name <key-vault-name> --name <secret name>
+
 # Threat Protection (Cross Site Scripting (CSS), CORS). Data Validation. Secure your Data.
 
 ## Validation techniques

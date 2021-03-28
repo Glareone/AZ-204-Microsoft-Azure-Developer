@@ -134,3 +134,5 @@ Different connection links (and other dedicated configurations) for slots: [link
 [tools to verify if our dependencies are vulnerable](https://docs.microsoft.com/en-us/learn/modules/top-5-security-items-to-consider/6-safe-dependencies)
 ## Data discovery
 * Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. [Link with information](https://docs.microsoft.com/en-us/learn/modules/configure-security-policies-to-manage-data/2-configure-data-classification)
+**Tips**
+* For example, if you want to grant an application the rights to use keys in a key vault, you only need to grant data plane access permissions using key vault access policies. No management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, by using RBAC, you can grant read access to the management plane. No access to the data plane is required.

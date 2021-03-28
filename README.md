@@ -141,3 +141,8 @@ Different connection links (and other dedicated configurations) for slots: [link
 [tools to verify if our dependencies are vulnerable](https://docs.microsoft.com/en-us/learn/modules/top-5-security-items-to-consider/6-safe-dependencies)
 ## Data discovery
 * Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. [Link with information](https://docs.microsoft.com/en-us/learn/modules/configure-security-policies-to-manage-data/2-configure-data-classification)
+
+# Azure RBAC
+[RBAC Overview](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/2-rbac-overview)
+## Not Action
+* Azure RBAC has something called `NotActions` permissions. Use NotActions to create a set of not allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the NotActions operations from the Actions operations. For example, the Contributor role has both Actions and NotActions. The wildcard (*) in Actions indicates that it can perform all operations on the control plane. Then you subtract the following operations in NotActions to compute the effective permissions

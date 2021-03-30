@@ -121,6 +121,9 @@ Different connection links (and other dedicated configurations) for slots: [link
 ## Container Registry + App Service + Docker Images. Continuous Integration
 [Here is an instruction](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer)
 
+## Enable Azure Active Directory (AD) Authentication for App Service
+[Active Directory Authentication Example](https://docs.microsoft.com/en-us/archive/blogs/waws/azure-app-service-authentication-aad-groups)
+
 # Azure Key Vault Example
 [Mapage Passwords in Key Vault Example](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault)
 [Key Vault Management and Configuration](https://docs.microsoft.com/en-us/learn/modules/configure-and-manage-azure-key-vault/3-manage-access-and-permissions-to-secrets)

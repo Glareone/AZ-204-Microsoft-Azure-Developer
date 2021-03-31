@@ -141,7 +141,7 @@ Different connection links (and other dedicated configurations) for slots: [link
 
 ## Validation techniques
 [Input_Validation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
-## CSS
+## Cross-Site Scripting (CSS)
 [Cross_Site_Scripting_Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 ## List of apps which help you to find vulnerabilities in your project. Safe Dependencies.
 [tools to verify if our dependencies are vulnerable](https://docs.microsoft.com/en-us/learn/modules/top-5-security-items-to-consider/6-safe-dependencies)
@@ -152,3 +152,11 @@ Different connection links (and other dedicated configurations) for slots: [link
 [RBAC Overview](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/2-rbac-overview)
 ## Not Action
 * Azure RBAC has something called `NotActions` permissions. Use NotActions to create a set of not allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the NotActions operations from the Actions operations. For example, the Contributor role has both Actions and NotActions. The wildcard (*) in Actions indicates that it can perform all operations on the control plane. Then you subtract the following operations in NotActions to compute the effective permissions
+
+# "Managed Identities": Access from one service to Another. IAM
+**You can allow your VM to access to resource group using this identity**
+**Two types: System-Assigned and User-Assigned. System-assigned will be deleted automatically from Azure AD is resource is deleted(VM in my example). User-Assigned will not (but may be granted to several resources)**
+[Managed Identities - overview](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)  
+[Access from VM to selected resource group](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm) - also IAM example is here  
+[Invoke-Restmethod: let you delegate such permissions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.1)  
+[Invoke-WebRequest vs Invoke-Restmethod (both of them will allow you to delegate permissions to VM)](https://www.cloudsma.com/2018/05/invoke-restmethod-vs-invoke-webrequest/)  

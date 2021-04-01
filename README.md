@@ -72,8 +72,18 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
 `azure find KEY_WORD` - to find anything tied with your keyword, i.e. `azure find "blob storage create"` or `azure find blob-storage-create` (first example with quotes usually works better)
 * To find information about proper command (like to get the list of all parameters): `az YOUR_COMMAND --help`  
 
-## On-premise gateway. Logic App, Power BI, Power Apps connection to on-premise data and network. 
-[Logic App Gateway Install overview](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install)
+## On-premise gateway & Isolated Service Environment & Direct Link | Peer-2-Site Site-2-Site. Logic App, Power BI, Power Apps connection to on-premise data and network. 
+### App Gateway
+[Logic App Gateway Install overview](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install)  
+[logic-apps-gatewa](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-connection)  
+### ISE - Integration Service Environment. Connect to On-premise resources. Isolation.
+[isolated-environment-overview](https://docs.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview)  
+### On-premise gategay
+[P2P & S2S & Express Route](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview#communicate-with-on-premises-resources)  
+**Tips**  
+`Point-to-site - Established between a virtual network and a single computer in your network. Each computer that wants to establish connectivity with a virtual network must configure its connection. This connection type is great if you're just getting started with Azure, or for developers, because it requires little or no changes to your existing network.`
+
+`Site-to-site VPN: Established between your on-premises VPN device and an Azure VPN Gateway that is deployed in a virtual network. This connection type enables any on-premises resource that you authorize to access a virtual network.`
 
 ## Azure PowerShell
 All cmd-lets support interactiveness.
@@ -111,6 +121,9 @@ PowerShell script example: [Link](https://github.com/Glareone/AZ-204-Microsoft-A
 ## Working with Slots (Production, Test slots within one App Service Plan (Standard, Premium and Isolated only, Free and Basic aren't supported))
 Link: [MS-Learn Link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots)  
 Different connection links (and other dedicated configurations) for slots: [link](https://docs.microsoft.com/en-us/learn/modules/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots)  
+
+## Application Service Environment. Isolation from 'noisy neighbours'
+[Application Service Environment](https://docs.microsoft.com/en-us/azure/app-service/environment/intro)
 
 # Azure Container Registry (let you save Docker images and use it for deployment in App Service)
 ## Create Registry and image

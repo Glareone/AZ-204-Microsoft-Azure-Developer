@@ -1,7 +1,8 @@
 # AZ-204-Microsoft-Azure-Developer
 This repo consists of materials gathering from different sources which help you to successfully pass  official Microsoft Azure Developer exam.
 
-## Durable Functions. Orchestrator.
+# Durable Functions
+## Durable Functions. "Orchestrator"  
 link: [Durable functions example](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions)
 
 * Useful in situations when you need to organize your work with several Functions and with People (not high-available elements)
@@ -39,7 +40,7 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   b. Create Event Hub: `az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME`  
   c. Check that Event Hub created properly: `az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME`  
   
-  ### Azure Event Hub Resilience: 
+### Azure Event Hub Resilience: 
   `Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.`
   **Event Hub, not Event Hub Namespace. You can Disable(turn off) the Event Hub to test that. All messages will appear when you turn on you Event Hub again.**
 
@@ -70,6 +71,9 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
 * Azure bot can help you to find information about anything from Azure World:  
 `azure find KEY_WORD` - to find anything tied with your keyword, i.e. `azure find "blob storage create"` or `azure find blob-storage-create` (first example with quotes usually works better)
 * To find information about proper command (like to get the list of all parameters): `az YOUR_COMMAND --help`  
+
+## On-premise gateway. Logic App, Power BI, Power Apps connection to on-premise data and network. 
+[Logic App Gateway Install overview](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install)
 
 ## Azure PowerShell
 All cmd-lets support interactiveness.
@@ -147,6 +151,10 @@ Different connection links (and other dedicated configurations) for slots: [link
 [tools to verify if our dependencies are vulnerable](https://docs.microsoft.com/en-us/learn/modules/top-5-security-items-to-consider/6-safe-dependencies)
 ## Data discovery
 * Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. [Link with information](https://docs.microsoft.com/en-us/learn/modules/configure-security-policies-to-manage-data/2-configure-data-classification)
+
+# Azure Active Directory
+## Active Directory App Manifect
+[Reference app manifest](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-app-manifest)
 
 # Azure RBAC
 [RBAC Overview](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/2-rbac-overview)

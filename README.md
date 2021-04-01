@@ -165,6 +165,10 @@ Different connection links (and other dedicated configurations) for slots: [link
 ## Data discovery
 * Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. [Link with information](https://docs.microsoft.com/en-us/learn/modules/configure-security-policies-to-manage-data/2-configure-data-classification)
 
+# API Management
+## API Management Access Restriction Policies
+[Access Restriction Policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies)
+
 # Azure Active Directory
 ## Active Directory App Manifect
 [Reference app manifest](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-app-manifest)

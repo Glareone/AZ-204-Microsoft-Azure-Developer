@@ -8,6 +8,13 @@ Additional Resources you could find here: [thomasmaurer blog, Azure Developer](h
 # AZ-204-Microsoft-Azure-Developer
 This repo consists of materials gathering from different sources which help you to successfully pass  official Microsoft Azure Developer exam.
 
+# Functions
+## Functions With Docker and Azure Container Registry
+My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Function%20with%20Docker%20and%20Azure%20Container%20Registry)
+
+## Function with write to Queue Storage and to Blob Storage
+My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Functions%20and%20Write%20to%20QueueStorage%20and%20to%20Blob/FunctionWithStorage)
+
 # Durable Functions
 ## Durable Functions. "Orchestrator"  
 link: [Durable functions example](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions)

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "LocalFunctionProject": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30131,
+      "useSSL": false
+    }
+  }
+}

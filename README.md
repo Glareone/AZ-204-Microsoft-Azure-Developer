@@ -81,8 +81,9 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
 
 ## On-premise gateway & Isolated Service Environment & Direct Link | Peer-2-Site Site-2-Site. Logic App, Power BI, Power Apps connection to on-premise data and network. 
 ### App Gateway
+#### Connect On-Premise Resources to LogicApp
 [Logic App Gateway Install overview](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install)  
-[logic-apps-gatewa](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-connection)  
+[logic-apps-gateway](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-connection)  
 ### ISE - Integration Service Environment. Connect to On-premise resources. Isolation.
 [isolated-environment-overview](https://docs.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview)  
 ### On-premise gategay

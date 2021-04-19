@@ -12,6 +12,12 @@ This repo consists of materials gathering from different sources which help you 
 ## Functions With Docker and Azure Container Registry
 My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Function%20with%20Docker%20and%20Azure%20Container%20Registry)
 
+* Build Azure Function with Docker:
+`docker build --tag alekseikolesnikov/azurefunctionsimage:v.1.0.0 .`
+* Run Azure Function Docker:
+`docker run -p 8080:80 -it alekseikolesnikov/azurefunctionsimage:v.1.0.0`
+* To Publish Azure Function into Container Registry you must add Docker Support to your project (you cant do that initially)
+
 ## Function with write to Queue Storage and to Blob Storage
 My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Functions%20and%20Write%20to%20QueueStorage%20and%20to%20Blob/FunctionWithStorage)
 

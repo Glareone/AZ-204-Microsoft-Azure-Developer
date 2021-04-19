@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionWithQueueStorage", "FunctionWithStorage\FunctionWithQueueStorage.csproj", "{37276C8F-7B38-4033-B07C-BF18BA368FF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionWithBlobStorage", "FunctionWithBlobStorage\FunctionWithBlobStorage.csproj", "{C51D3CB1-D11C-4A02-9040-6582168B70F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37276C8F-7B38-4033-B07C-BF18BA368FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37276C8F-7B38-4033-B07C-BF18BA368FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37276C8F-7B38-4033-B07C-BF18BA368FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37276C8F-7B38-4033-B07C-BF18BA368FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51D3CB1-D11C-4A02-9040-6582168B70F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51D3CB1-D11C-4A02-9040-6582168B70F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51D3CB1-D11C-4A02-9040-6582168B70F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51D3CB1-D11C-4A02-9040-6582168B70F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {996ABA37-FA15-450F-A95D-BB22EB7CD274}
+	EndGlobalSection
+EndGlobal

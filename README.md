@@ -159,6 +159,15 @@ Different connection links (and other dedicated configurations) for slots: [link
 ## Container Registry + App Service + Docker Images. Continuous Integration
 [Here is an instruction](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer)
 
+## Container Registry + Function
+My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Function%20with%20Docker%20and%20Azure%20Container%20Registry)
+
+* Build Azure Function with Docker:
+`docker build --tag alekseikolesnikov/azurefunctionsimage:v.1.0.0 .`
+* Run Azure Function Docker:
+`docker run -p 8080:80 -it alekseikolesnikov/azurefunctionsimage:v.1.0.0`
+* To Publish Azure Function into Container Registry you must add Docker Support to your project (you cant do that initially)
+
 ## Enable Azure Active Directory (AD) Authentication for App Service
 [Active Directory Authentication Example](https://docs.microsoft.com/en-us/archive/blogs/waws/azure-app-service-authentication-aad-groups)
 

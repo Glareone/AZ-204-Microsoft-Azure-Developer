@@ -86,7 +86,7 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
 [logic-apps-gateway](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-connection)  
 ### ISE - Integration Service Environment. Connect to On-premise resources. Isolation.
 [isolated-environment-overview](https://docs.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview)  
-### On-premise gategay
+### On-premise gateway
 [P2P & S2S & Express Route](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview#communicate-with-on-premises-resources)  
 **Tips**  
 `Point-to-site - Established between a virtual network and a single computer in your network. Each computer that wants to establish connectivity with a virtual network must configure its connection. This connection type is great if you're just getting started with Azure, or for developers, because it requires little or no changes to your existing network.`

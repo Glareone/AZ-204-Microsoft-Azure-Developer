@@ -218,3 +218,5 @@ My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsof
 
 # Azure Traffic Manager
 ![image](https://user-images.githubusercontent.com/4239376/120998334-ad33c000-c790-11eb-8769-7572c3260151.png)
+![image](https://user-images.githubusercontent.com/4239376/120999216-888c1800-c791-11eb-9f98-43e14373e7e6.png)
+

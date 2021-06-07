@@ -215,3 +215,6 @@ My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsof
 [Access from VM to selected resource group](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm) - also IAM example is here  
 [Invoke-Restmethod: let you delegate such permissions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.1)  
 [Invoke-WebRequest vs Invoke-Restmethod (both of them will allow you to delegate permissions to VM)](https://www.cloudsma.com/2018/05/invoke-restmethod-vs-invoke-webrequest/)  
+
+# Azure Traffic Manager
+![image](https://user-images.githubusercontent.com/4239376/120998334-ad33c000-c790-11eb-8769-7572c3260151.png)

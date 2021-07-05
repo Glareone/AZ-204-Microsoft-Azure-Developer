@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderItemsReserverFunction", "FunctionApp1\OrderItemsReserverFunction.csproj", "{7F6982B6-B4BC-4FAD-8232-ACEA81C124FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F6982B6-B4BC-4FAD-8232-ACEA81C124FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6982B6-B4BC-4FAD-8232-ACEA81C124FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6982B6-B4BC-4FAD-8232-ACEA81C124FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6982B6-B4BC-4FAD-8232-ACEA81C124FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0749C0C7-FB7B-41F4-8C9E-8346B5339C0F}
+	EndGlobalSection
+EndGlobal

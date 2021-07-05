@@ -9,6 +9,10 @@ Additional Resources you could find here: [thomasmaurer blog, Azure Developer](h
 This repo consists of materials gathering from different sources which help you to successfully pass  official Microsoft Azure Developer exam.
 
 # Functions
+## Function with write to Queue Storage and to Blob Storage
+My function v3 (most modern) example: [Example in C#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/blob/main/EShopFunctionApp/FunctionApp1/OrderItemsReserver.cs)   
+My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Functions%20and%20Write%20to%20QueueStorage%20and%20to%20Blob/FunctionWithStorage)
+
 ## Functions With Docker and Azure Container Registry
 My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Function%20with%20Docker%20and%20Azure%20Container%20Registry)
 
@@ -17,9 +21,6 @@ My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsof
 * Run Azure Function Docker:
 `docker run -p 8080:80 -it alekseikolesnikov/azurefunctionsimage:v.1.0.0`
 * To Publish Azure Function into Container Registry you must add Docker Support to your project (you cant do that initially)
-
-## Function with write to Queue Storage and to Blob Storage
-My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsoft-Azure-Developer/tree/main/Functions%20and%20Write%20to%20QueueStorage%20and%20to%20Blob/FunctionWithStorage)
 
 # Durable Functions
 ## Durable Functions. "Orchestrator"  

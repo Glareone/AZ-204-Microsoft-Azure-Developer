@@ -9,7 +9,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace OrderItemsReserver
+namespace EshopFunctionApp
 {
     public static class OrderItemsReserver
     {

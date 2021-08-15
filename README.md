@@ -154,6 +154,24 @@ Different connection links (and other dedicated configurations) for slots: [link
 
 ![image](https://user-images.githubusercontent.com/4239376/112735530-553d3980-8f55-11eb-8124-1bc83692f934.png)
 
+## Upload docker image to Azure Container Registry
+### Upload Sole Image (docker push)
+  1) Create azure container registry
+  2) Build your images locally using `docker build`
+  3) add tag to your image `>docker tag <originalImageTag> <containerregistry.azurecr.io/newimagename>`
+  4) login to azure container registry: `az login` and `az acr login --name myregistry`
+  5) push your image `docker push <containerregistry.azurecr.io/newimagename>`
+ 
+### Upload using docker-compose (docker-compose push)
+  1) Create azure container registry
+  2) Build your images locally using `docker-compose build`
+  3) add tag to your image `>docker tag <originalImageTag> <containerregistry.azurecr.io/newimagename>`
+  4) login to azure container registry: `az login` and `az acr login --name myregistry`
+  5) update your docker-compose file with new image names `image: <containerregistry.azurecr.io/newimagename>`
+  6) use `docker-compose push`
+
+PS Additional information is under quick start tab in Azure Container Registry
+
 ## Use image in order to deploy new version in App Service
 [Here is an instruction](https://docs.microsoft.com/en-us/learn/modules/deploy-run-container-app-service/5-exercise-deploy-web-app?pivots=csharp)
 

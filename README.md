@@ -22,6 +22,8 @@ My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsof
 `docker run -p 8080:80 -it alekseikolesnikov/azurefunctionsimage:v.1.0.0`
 * To Publish Azure Function into Container Registry you must add Docker Support to your project (you cant do that initially)
 
+* Push to Azure Container Registry
+
 # Durable Functions
 ## Durable Functions. "Orchestrator"  
 link: [Durable functions example](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions)
@@ -153,6 +155,22 @@ Different connection links (and other dedicated configurations) for slots: [link
   2) in your project `az acr build --registry <container_registry_name> --image <selected_image_name> .`
 
 ![image](https://user-images.githubusercontent.com/4239376/112735530-553d3980-8f55-11eb-8124-1bc83692f934.png)
+
+## Upload docker image to Azure Container Registry
+### Upload Sole Image
+  1) Create azure container registry
+  2) Build your images locally using `docker build`
+  3) add tag to your image `>docker tag <originalImageTag> <containerregistry.azurecr.io/newimagename>`
+  4) login to azure container registry: `az login` and `az acr login --name myregistry`
+  5) push your image `docker push <containerregistry.azurecr.io/newimagename>`
+ 
+### Upload using docker-compose
+  1) Create azure container registry
+  2) Build your images locally using `docker-compose build`
+  3) add tag to your image `>docker tag <originalImageTag> <containerregistry.azurecr.io/newimagename>`
+  4) login to azure container registry: `az login` and `az acr login --name myregistry`
+  5) update your docker-compose file with new image names `image: <containerregistry.azurecr.io/newimagename>`
+  6) use `docker-compose push`
 
 ## Use image in order to deploy new version in App Service
 [Here is an instruction](https://docs.microsoft.com/en-us/learn/modules/deploy-run-container-app-service/5-exercise-deploy-web-app?pivots=csharp)

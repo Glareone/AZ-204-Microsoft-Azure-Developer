@@ -61,6 +61,10 @@ Example: [Watch Function Example Using Visual Studio 2019](https://github.com/Gl
   b. Create Event Hub: `az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME`  
   c. Check that Event Hub created properly: `az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME`  
   
+## Event Hub vs Event Grid:
+The noticeable difference between them is that Event Hubs are accepting only endpoints for the ingestion of data and they don't provide a mechanism for sending data back to publishers. On the other hand, Event Grid sends HTTP requests to notify events that happen in publishers.  
+[Good Article about the difference](https://www.serverless360.com/blog/azure-event-grid-vs-event-hub#:~:text=The%20noticeable%20difference%20between%20them,events%20that%20happen%20in%20publishers.)
+  
 ### Azure Event Hub Resilience: 
   `Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.`
   **Event Hub, not Event Hub Namespace. You can Disable(turn off) the Event Hub to test that. All messages will appear when you turn on you Event Hub again.**

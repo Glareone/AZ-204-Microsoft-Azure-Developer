@@ -96,6 +96,7 @@ The noticeable difference between them is that Event Hubs are accepting only end
 * Azure bot can help you to find information about anything from Azure World:  
 `azure find KEY_WORD` - to find anything tied with your keyword, i.e. `azure find "blob storage create"` or `azure find blob-storage-create` (first example with quotes usually works better)
 * To find information about proper command (like to get the list of all parameters): `az YOUR_COMMAND --help`  
+* To find information in bash you may also use `az find "YOUR_QUESTION"`
 
 ## On-premise gateway & Isolated Service Environment & Direct Link | Peer-2-Site Site-2-Site. Logic App, Power BI, Power Apps connection to on-premise data and network. 
 ### App Gateway

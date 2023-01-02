@@ -232,13 +232,14 @@ My example: [Prepared example in c#](https://github.com/Glareone/AZ-204-Microsof
 ## Not Action
 * Azure RBAC has something called `NotActions` permissions. Use NotActions to create a set of not allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the NotActions operations from the Actions operations. For example, the Contributor role has both Actions and NotActions. The wildcard (*) in Actions indicates that it can perform all operations on the control plane. Then you subtract the following operations in NotActions to compute the effective permissions
 
-# "Managed Identities": Access from one service to Another. IAM
+# Managed Identities: Access from one service to Another. IAM
 **You can allow your VM to access to resource group using this identity**  
 **Two types: System-Assigned and User-Assigned. System-assigned will be deleted automatically from Azure AD is resource is deleted(VM in my example). User-Assigned will not (but may be granted to several resources)**  
-[Managed Identities - overview](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)  
-[Access from VM to selected resource group](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm) - also IAM example is here  
-[Invoke-Restmethod: let you delegate such permissions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.1)  
-[Invoke-WebRequest vs Invoke-Restmethod (both of them will allow you to delegate permissions to VM)](https://www.cloudsma.com/2018/05/invoke-restmethod-vs-invoke-webrequest/)  
+* Good example of how to apply user-defined Managed Identity to Azure Function and Azure Storage Account: [good explanation and example](https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)  
+* [Managed Identities - overview](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)  
+* [Access from VM to selected resource group](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm) - also IAM example is here  
+* [Invoke-Restmethod: let you delegate such permissions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.1)  
+* [Invoke-WebRequest vs Invoke-Restmethod (both of them will allow you to delegate permissions to VM)](https://www.cloudsma.com/2018/05/invoke-restmethod-vs-invoke-webrequest/)  
 
 # Azure Traffic Manager
 ![image](https://user-images.githubusercontent.com/4239376/120998334-ad33c000-c790-11eb-8769-7572c3260151.png)

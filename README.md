@@ -1,9 +1,9 @@
-Learn Portal link is: [Microsoft Learn Portal](https://docs.microsoft.com/en-us/learn/)
+Learn Portal link is: [Microsoft Learn Portal](https://docs.microsoft.com/en-us/learn/)  
 
-Additional Information from Udemy: [Udemy Learn and Questions Pack](https://www.udemy.com/course/az-204-mock-test/learn/quiz/5134706#overview)  
-**Pay attention, this questions come from legal sources, this is NOT HORSES**
-
-Additional Resources you could find here: [thomasmaurer blog, Azure Developer](https://www.thomasmaurer.ch/2020/03/az-204-study-guide-developing-solutions-for-microsoft-azure/)
+Table of Content:
+1. [Azure Container App. useful exercise on Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-azure-container-apps/4-container-apps-containers)
+2. [Udemy Learn and Official Questions Pack](https://www.udemy.com/course/az-204-mock-test/learn/quiz/5134706#overview)  
+3. [Thomasmaurer blog, Azure Developer](https://www.thomasmaurer.ch/2020/03/az-204-study-guide-developing-solutions-for-microsoft-azure/)
 
 # AZ-204-Microsoft-Azure-Developer
 This repo consists of materials gathering from different sources which help you to successfully pass  official Microsoft Azure Developer exam.
